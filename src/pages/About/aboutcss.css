@@ -1,0 +1,53 @@
+.headingA {
+  position: relative;
+  display: flex;
+  font-weight: 800;
+  top: 70px;
+  font-size: 3rem;
+  height: 400px;
+  background: url("https://233e5r7tfnv3se11m26d4k8g-wpengine.netdna-ssl.com/wp-content/uploads/2014/09/shutterstock_740461477-min.jpg")
+    no-repeat center top/cover;
+  align-items: center;
+  justify-content: center;
+}
+.line {
+  margin: 0 8px;
+  background: #1a202c;
+  height: 0;
+  width: 8px;
+  transition: all 1s ease;
+}
+
+.lineon {
+  height: 60px;
+}
+.title {
+  position: relative;
+  right: 20px;
+  opacity: 0;
+  transition: all 0.8s ease;
+}
+.titleon {
+  transform: translateX(30px);
+  opacity: 1;
+}
+.Content1 {
+
+  margin-top: 100px;
+  padding: 50px !important;
+  text-align: justify;
+  font-weight: 500;
+}
+
+
+@media screen and (max-width: 768px) {
+  .Content1,
+  .Content2 {
+    margin: 190px 30px;
+    grid-template-columns: 1fr;
+  }
+  .imagecontainer::after {
+    bottom: 380px;
+    left: 30px;
+  }
+}
